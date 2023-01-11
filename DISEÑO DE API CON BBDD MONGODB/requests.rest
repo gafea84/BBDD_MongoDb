@@ -1,0 +1,37 @@
+GET http://localhost:3000/api/inmueble
+
+
+###
+POST http://localhost:3000/api/inmueble
+Content-Type: application/json
+
+{
+    "piso": 3,
+    "letra": "a",
+    "superficie": 120,
+    "habitaciones": 4,
+    "alquilado": "false",
+    "propietario": "Juan Rodríguez",
+    "email":"rodri@casero.com" 
+}
+
+
+###
+PUT http://localhost:3000/api/inmueble/635a3d99a4450f9a5a1b3bc6
+Content-Type: application/json
+
+{
+    "piso": 3,
+    "letra": "a",
+    "superficie": 120,
+    "habitaciones": 5,
+    "alquilado": "true",
+    "propietario": "Juan Rodríguez",
+    "email":"rodri@casero.com" 
+}
+
+###
+DELETE http://localhost:3000/api/inmueble/635a3d99a4450f9a5a1b3bc6
+
+
+
